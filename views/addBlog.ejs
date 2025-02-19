@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%- include("./partials/head") %>
+    <title>Document</title>
+  </head>
+  <body>
+    <%- include("./partials/navbar") %>
+    <div class="container ">
+
+        <form action="/blog" method="post" enctype="multipart/form-data" >
+            <div class="mb-3 ">
+                <label for="coverImg" class="form-label">Cover Image</label>
+                <input
+                  type="file"
+                  class="form-control"
+                  id="coverImg"
+                  aria-describedby="coverImg"
+                  name="coverImg"
+                  name="coverImg"
+                />
+              </div>
+          <div class="mb-3 ">
+            <label for="title" class="form-label">Title</label>
+            <input
+              type="text"
+              class="form-control"
+              id="title"
+              aria-describedby="title"
+              name="title"
+            />
+          </div>
+          <div class="form-floating mb-3">
+            <textarea name="body" class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+            <label  for="floatingTextarea">Body</label>
+          </div>
+          <div class="mb-3">
+            <button class="btn btn-primary">Submit</button>
+          </div>
+        </form>
+    </div>
+    <%- include("./partials/scripts") %>
+    <!--automatically import the code in scripts.ejs-->
+  </body>
+</html>
