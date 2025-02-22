@@ -25,7 +25,7 @@ app.get("/", async(req,res)=> {
         user : req.user,
         blogs : blogs
     });
-} )
+})
 app.use("/user", userRoute);
 app.use("/blog", blogRoute);
 

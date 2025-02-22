@@ -16,7 +16,7 @@ const userSchema = new Schema({
     } , 
     profileImg : {
         type : String , 
-        default : "/public/img/avatar.png"
+        default : "/img/avatar.jpeg"
     },
     role : {
         type : String , 
